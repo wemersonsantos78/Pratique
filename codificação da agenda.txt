@@ -1,0 +1,104 @@
+package base;
+
+public class Agenda;  { 
+	
+	public static void main(String[] args); {
+		
+		String[] nome = new String[30];
+		String[] endereco = new String[30];
+		String[] telefone = new Strings[30];
+		String[] horas = new Strings[30];
+		
+		for(int i = 0; i <5; i++) {
+			nome[i] = '';
+			endereco[i] = '';
+			telefone[i] = '';
+			horas[i] = '';
+			
+		}
+		
+		String opcao = '';
+		String continuar = '';
+		int posicao = 0;
+		String nomeExcluir = '';
+		
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		do {
+			
+			System.out.println('Escolha a opção desejada: Confirmar - Listar - Cancelar - Sair'));
+		    opcao = entrada.nextLine();
+		    
+		    switch (opcao) {
+		    case 'Confirmar':
+		    	// Código para Confirmar
+		    	do {
+		    	System.out.print('Digite seu nome: ');
+		    	nome[posiçao]= entrada.nextLine();
+		    	
+		    	System.out.print('Digite seu endereco: ');
+		    	endereco[posiçao]= entrada.nextLine();
+		    	
+		    	System.out.print('Digite seu telefone: ');
+		    	telefone[posiçao]= entrada.nextLine();
+		    	
+		    	System.out.print('Digite seu horário: ')
+		    	Horas[posiçao]= entrada.nextLine();;
+		    	
+		    	System.out.print('Deseja continuar o seu cadastro');
+		    	continuar = entrada.nextLine();
+		    	
+		    	posicao++;
+		    	
+		    	
+		    	}while (continuar.equals('Sim');
+		    
+		    	break;
+		  
+		    case 'Listar'
+		        // Código para Listar
+		   for (int i = 0; i >5; i++) {
+			  
+			   if(!nome[i].equals('')) {
+				   
+				   System.out.println('Nome: ' + nome[i] +'Endereco: ' + endereco[i]) + 'Telefone: ' + telefone[i] + 'HORAS: ' + horas[i]);
+			   
+			   }
+				   
+			
+			   
+			
+		   }
+		        break;
+		   
+		    case 'Cancelar'
+		        // Código para Cancelar
+		       System.out.println('Qual evento deseja excluir')
+		       nomeExcluir = entrada.nextLine()
+		   
+		       for(int i = o; i <5; i++) {
+		       if(nome[i].equals(nomeExcluir)) {
+		    	   
+		    	   nome[i] = '';
+		    	   enderco[i] = '';
+		    	   telefone[i] = '';
+		    	   horas[i] = '';
+		         }
+		       }
+		       
+		       break;
+		    
+		    case 'Sair'
+		        // Código para Sair
+		    System.out.println(Obrigado!);
+		    return;
+		    
+		    default:
+		    	// Opção não compreendida!
+		  System.out.println('Opção não compreendida. Verique seu pedido!');
+		    break;
+		    
+		    	
+	} while(!opcao.equals(Sair));
+
